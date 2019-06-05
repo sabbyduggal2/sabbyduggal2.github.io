@@ -53,6 +53,7 @@ function draw() {
   time=time-0.08
   text("Time:" +time.toFixed(0),0,100)
   fill(10, 60, 50)
+if (touches.length ==0) {
   if(keyIsDown(LEFT_ARROW)) {
     x = x-8 
   }
@@ -68,6 +69,7 @@ function draw() {
   if (u>height || u<0) {
     direction2 = direction2 *-1
   }
+}
   circle(x,y,50)
   u=u+1*direction2
   square(z,u,100)
