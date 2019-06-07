@@ -54,6 +54,10 @@ function draw() {
   text("Time:" +time.toFixed(0),0,100)
   fill(10, 60, 50)
 if (touches.length ==0) {
+	else {
+		600=touches[0].x
+		100=touches[0].y
+	}   
   if(keyIsDown(LEFT_ARROW)) {
     x = x-8 
   }
